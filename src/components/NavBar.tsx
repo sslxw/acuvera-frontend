@@ -31,7 +31,7 @@ export const NavBar: React.FC = () => {
   };
 
   const navItems = [
-    { path: '/', label: 'Classify', exact: true },
+    { path: '/classify', label: 'Classify', exact: true },
     { path: '/dashboard', label: 'Dashboard' },
     { path: '/review', label: 'Review' }
   ];
