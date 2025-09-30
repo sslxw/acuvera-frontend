@@ -112,9 +112,8 @@ class ApiClient {
   }
 
   async validatePassword(password: string): Promise<{ valid: boolean; message: string }> {
-    return this.request('/api/validate-password', {
+    return this.request(`/api/validate-password?password=${encodeURIComponent(password)}`, {
       method: 'POST',
-      body: JSON.stringify(password),
     });
   }
 }
